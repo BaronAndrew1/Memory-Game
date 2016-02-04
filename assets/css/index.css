@@ -4,6 +4,11 @@ body {
   background-color: blue;
 }
 
+section {
+  width: 880px;
+  margin: 0 auto;
+}
+
 .header {
   font-size: 6em;
   text-align: center;
@@ -37,6 +42,137 @@ a {
   padding-top: .7em;
   padding-bottom: .5em;
 }
-a:hover {
-  background-color: grey;
+.hover:hover {
+  background-color: steelblue;
+}
+.list {
+  margin-left: 5%;
+  display: inline-block;
+  margin-bottom: 50px;
+}
+ul li {
+  display: inline-block;
+}
+.timer {
+  float: right;
+  margin-right: 5%;
+}
+input {
+  width: 8em;
+  height: 8em;
+  display:none;
+}
+.card {
+  width: 8em;
+  height: 8em;
+  background: red;
+  display: inline-block;
+  transition: background 1s, -webkit-transform 1s;
+  border-radius: .5em;
+}
+input:checked +.card {
+  background: yellow;
+  -webkit-transform: rotateY(360deg);
+}
+input:checked +.card .house{
+  opacity: 1;
+  transition-delay: .5s;
+}
+
+input:checked +.card .fort{
+  opacity: 1;
+  transition-delay: .5s;
+}
+
+input:checked +.card .archive{
+  opacity: 1;
+  transition-delay: .5s;
+}
+
+input:checked +.card .building{
+  opacity: 1;
+  transition-delay: .5s;
+}
+
+input:checked +.card .scale{
+  opacity: 1;
+  transition-delay: .5s;
+}
+
+input:checked +.card .bicycle{
+  opacity: 1;
+  transition-delay: .5s;
+}
+
+input:checked +.card .car{
+  opacity: 1;
+  transition-delay: .5s;
+}
+
+input:checked +.card .camera{
+  opacity: 1;
+  transition-delay: .5s;
+}
+
+input:checked +.card .crosshairs{
+  opacity: 1;
+  transition-delay: .5s;
+}
+
+.card-list {
+  margin-left: 5%;
+}
+.house {
+  position: absolute;
+  margin-top: 33px;
+  margin-left: 35px;
+  opacity: 0;
+}
+.fort {
+  position: absolute;
+  margin-top: 41px;
+  margin-left: 42px;
+  opacity: 0;
+}
+.archive {
+  position: absolute;
+  margin-top: 40px;
+  margin-left: 40px;
+  opacity: 0;
+}
+.building {
+  position: absolute;
+  margin-top: 40px;
+  margin-left: 48px;
+  opacity: 0;
+}
+.bicycle {
+  position: absolute;
+  margin-top: 33px;
+  margin-left: 28px;
+  opacity: 0;
+}
+.car {
+  position: absolute;
+  margin-top: 40px;
+  margin-left: 38px;
+  opacity: 0;
+}
+.camera {
+  position: absolute;
+  margin-top: 40px;
+  margin-left: 38px;
+  opacity: 0;
+}
+.crosshairs {
+  position: absolute;
+  margin-top: 33px;
+  margin-left: 36px;
+  opacity: 0;
+}
+.scale {
+  position: absolute;
+  margin-top: 30px;
+  margin-left: 28px;
+  opacity: 0;
 }
