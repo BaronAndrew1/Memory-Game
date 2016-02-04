@@ -1,0 +1,42 @@
+/*Font*/
+body {
+  font-family: "Orbitron", sans-serif;
+  background-color: blue;
+}
+
+.header {
+  font-size: 6em;
+  text-align: center;
+  color: white;
+  margin-top: 3%;
+}
+.header1 {
+  font-size: 6em;
+  text-align: center;
+  color: white;
+  margin-top: 6%;
+}
+.new-game {
+  font-size: 3em;
+  text-align: center;
+  color: white;
+  margin-top: 4%;
+}
+a {
+  text-decoration: none;
+  color: white;
+}
+.hover {
+  text-align: center;
+  color: white;
+  font-size: 1.75em;
+  margin-top: 3.25em;
+  border: 1px solid white;
+  width: 30%;
+  margin-left:35%;
+  padding-top: .7em;
+  padding-bottom: .5em;
+}
+a:hover {
+  background-color: grey;
+}
