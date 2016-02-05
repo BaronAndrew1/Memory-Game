@@ -4,10 +4,14 @@ body {
   background-color: #999;
 }
 
+/*Define sizing*/
+
 section {
   width: 880px;
   margin: 0 auto;
 }
+
+/*Header Format*/
 
 .header {
   font-size: 6em;
@@ -15,18 +19,23 @@ section {
   color: white;
   margin-top: 3%;
 }
+
 .header1 {
   font-size: 6em;
   text-align: center;
   color: white;
   margin-top: 6%;
 }
+
 .new-game {
   font-size: 3em;
   text-align: center;
   color: white;
   margin-top: 4%;
 }
+
+/*Rotate Borders*/
+
 .easy {
   transform: perspective(220px) rotateY(-15deg);
   margin-left: 33%;
@@ -36,10 +45,14 @@ section {
   transform: perspective(220px) rotateY(15deg);
   margin-left: 30%;
 }
+
+/*Links and Hovers*/
+
 a {
   text-decoration: none;
   color: white;
 }
+
 .hover {
   text-align: center;
   color: white;
@@ -50,9 +63,17 @@ a {
   padding-top: .7em;
   padding-bottom: .5em;
 }
+
+.hover2:hover {
+  background-color: steelblue;
+}
+
 .hover:hover {
   background-color: steelblue;
 }
+
+/*Heart Counter and Timer*/
+
 .list {
   margin-left: 5%;
   display: inline-block;
@@ -66,11 +87,15 @@ ul li {
   margin-right: 5%;
   font-weight: bold;
 }
+
+/*Cards and Card Manipulation*/
+
 input {
   width: 8em;
   height: 8em;
   display:none;
 }
+
 .card {
   width: 8em;
   height: 8em;
@@ -80,13 +105,16 @@ input {
   border-radius: .5em;
   border: 1px solid black;
 }
+
 .card:hover {
   box-shadow: 2px 2px black;
 }
+
 input:checked +.card {
   background: #555;
   -webkit-transform: rotateY(360deg);
 }
+
 input:checked +.card .house{
   opacity: 1;
   transition-delay: .5s;
@@ -135,60 +163,73 @@ input:checked +.card .crosshairs{
 .card-list {
   margin-left: 5%;
 }
+
+/*Card Images*/
+
 .house {
   position: absolute;
   margin-top: 33px;
   margin-left: 35px;
   opacity: 0;
 }
+
 .fort {
   position: absolute;
   margin-top: 41px;
   margin-left: 42px;
   opacity: 0;
 }
+
 .archive {
   position: absolute;
   margin-top: 40px;
   margin-left: 40px;
   opacity: 0;
 }
+
 .building {
   position: absolute;
   margin-top: 40px;
   margin-left: 48px;
   opacity: 0;
 }
+
 .bicycle {
   position: absolute;
   margin-top: 33px;
   margin-left: 28px;
   opacity: 0;
 }
+
 .car {
   position: absolute;
   margin-top: 40px;
   margin-left: 38px;
   opacity: 0;
 }
+
 .camera {
   position: absolute;
   margin-top: 40px;
   margin-left: 38px;
   opacity: 0;
 }
+
 .crosshairs {
   position: absolute;
   margin-top: 33px;
   margin-left: 36px;
   opacity: 0;
 }
+
 .scale {
   position: absolute;
   margin-top: 30px;
   margin-left: 28px;
   opacity: 0;
 }
+/*Return button and formatting*/
+
 .return {
   display: inline-block;
   margin-top: 2em;
@@ -197,10 +238,14 @@ input:checked +.card .crosshairs{
   padding: 6px 4px 3px 4px;
   background-color: #888;
 }
+
 .return a {
   color: black;
   font-weight: bold;
 }
+
+/*Hide Audio Player*/
+
 audio {
   opacity: 0;
 }
