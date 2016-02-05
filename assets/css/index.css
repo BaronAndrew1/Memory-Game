@@ -1,7 +1,7 @@
 /*Font*/
 body {
   font-family: "Orbitron", sans-serif;
-  background-color: blue;
+  background-color: #999;
 }
 
 section {
@@ -27,6 +27,15 @@ section {
   color: white;
   margin-top: 4%;
 }
+.easy {
+  transform: perspective(220px) rotateY(-15deg);
+  margin-left: 33%;
+}
+
+.hard {
+  transform: perspective(220px) rotateY(15deg);
+  margin-left: 30%;
+}
 a {
   text-decoration: none;
   color: white;
@@ -38,7 +47,6 @@ a {
   margin-top: 3.25em;
   border: 1px solid white;
   width: 30%;
-  margin-left:35%;
   padding-top: .7em;
   padding-bottom: .5em;
 }
@@ -56,6 +64,7 @@ ul li {
 .timer {
   float: right;
   margin-right: 5%;
+  font-weight: bold;
 }
 input {
   width: 8em;
@@ -65,13 +74,17 @@ input {
 .card {
   width: 8em;
   height: 8em;
-  background: red;
+  background: #666;
   display: inline-block;
   transition: background 1s, -webkit-transform 1s;
   border-radius: .5em;
+  border: 1px solid black;
+}
+.card:hover {
+  box-shadow: 2px 2px black;
 }
 input:checked +.card {
-  background: yellow;
+  background: #555;
   -webkit-transform: rotateY(360deg);
 }
 input:checked +.card .house{
@@ -174,5 +187,20 @@ input:checked +.card .crosshairs{
   position: absolute;
   margin-top: 30px;
   margin-left: 28px;
+  opacity: 0;
+}
+.return {
+  display: inline-block;
+  margin-top: 2em;
+  margin-left: 3em;
+  border: 2px solid black;
+  padding: 6px 4px 3px 4px;
+  background-color: #888;
+}
+.return a {
+  color: black;
+  font-weight: bold;
+}
+audio {
   opacity: 0;
 }
