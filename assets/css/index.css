@@ -18,6 +18,7 @@ section {
   text-align: center;
   color: white;
   margin-top: 3%;
+  margin-bottom: 4%;
 }
 
 .header1 {
@@ -39,11 +40,13 @@ section {
 .easy {
   transform: perspective(220px) rotateY(-15deg);
   margin-left: 33%;
+  display: inline-block;
 }
 
 .hard {
   transform: perspective(220px) rotateY(15deg);
   margin-left: 30%;
+  display: inline-block;
 }
 
 /*Links and Hovers*/
@@ -79,9 +82,11 @@ a {
   display: inline-block;
   margin-bottom: 50px;
 }
+
 ul li {
   display: inline-block;
 }
+
 .timer {
   float: right;
   margin-right: 5%;
@@ -107,7 +112,8 @@ input {
 }
 
 .card:hover {
-  box-shadow: 2px 2px black;
+  box-shadow: 0px 0px 10px black;
+  border: 1px solid rgb(200,200,200);
 }
 
 input:checked +.card {
@@ -170,6 +176,7 @@ input:checked +.card .crosshairs{
   position: absolute;
   margin-top: 33px;
   margin-left: 35px;
+  color: rgb(225,225,225);
   opacity: 0;
 }
 
@@ -177,6 +184,7 @@ input:checked +.card .crosshairs{
   position: absolute;
   margin-top: 41px;
   margin-left: 42px;
+  color: rgb(225,225,225);
   opacity: 0;
 }
 
@@ -184,6 +192,7 @@ input:checked +.card .crosshairs{
   position: absolute;
   margin-top: 40px;
   margin-left: 40px;
+  color: rgb(225,225,225);
   opacity: 0;
 }
 
@@ -191,6 +200,7 @@ input:checked +.card .crosshairs{
   position: absolute;
   margin-top: 40px;
   margin-left: 48px;
+  color: rgb(225,225,225);
   opacity: 0;
 }
 
@@ -198,6 +208,7 @@ input:checked +.card .crosshairs{
   position: absolute;
   margin-top: 33px;
   margin-left: 28px;
+  color: rgb(225,225,225);
   opacity: 0;
 }
 
@@ -205,6 +216,7 @@ input:checked +.card .crosshairs{
   position: absolute;
   margin-top: 40px;
   margin-left: 38px;
+  color: rgb(225,225,225);
   opacity: 0;
 }
 
@@ -212,6 +224,7 @@ input:checked +.card .crosshairs{
   position: absolute;
   margin-top: 40px;
   margin-left: 38px;
+  color: rgb(225,225,225);
   opacity: 0;
 }
 
@@ -219,6 +232,7 @@ input:checked +.card .crosshairs{
   position: absolute;
   margin-top: 33px;
   margin-left: 36px;
+  color: rgb(225,225,225);
   opacity: 0;
 }
 
@@ -226,6 +240,7 @@ input:checked +.card .crosshairs{
   position: absolute;
   margin-top: 30px;
   margin-left: 28px;
+  color: rgb(225,225,225);
   opacity: 0;
 }
 /*Return button and formatting*/
@@ -242,6 +257,10 @@ input:checked +.card .crosshairs{
 .return a {
   color: black;
   font-weight: bold;
+}
+
+.return:hover {
+  box-shadow: 0px 0px 20px steelblue;
 }
 
 /*Hide Audio Player*/
