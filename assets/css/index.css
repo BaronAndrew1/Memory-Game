@@ -117,52 +117,52 @@ input {
   border: 1px solid rgb(200,200,200);
 }
 
-input:checked +.card {
+.clicked {
   background: #555;
   -webkit-transform: rotateY(360deg);
 }
 
-input:checked +.card .house{
+.clicked .house{
   opacity: 1;
   transition-delay: .5s;
 }
 
-input:checked +.card .fort{
+.clicked .fort{
   opacity: 1;
   transition-delay: .5s;
 }
 
-input:checked +.card .archive{
+.clicked .archive{
   opacity: 1;
   transition-delay: .5s;
 }
 
-input:checked +.card .building{
+.clicked .building{
   opacity: 1;
   transition-delay: .5s;
 }
 
-input:checked +.card .scale{
+.clicked .scale{
   opacity: 1;
   transition-delay: .5s;
 }
 
-input:checked +.card .bicycle{
+.clicked .bicycle{
   opacity: 1;
   transition-delay: .5s;
 }
 
-input:checked +.card .car{
+.clicked .car{
   opacity: 1;
   transition-delay: .5s;
 }
 
-input:checked +.card .camera{
+.clicked .camera{
   opacity: 1;
   transition-delay: .5s;
 }
 
-input:checked +.card .crosshairs{
+.clicked .crosshairs{
   opacity: 1;
   transition-delay: .5s;
 }
@@ -268,4 +268,29 @@ input:checked +.card .crosshairs{
 
 audio {
   opacity: 0;
+}
+
+/*Modal Stuff*/
+
+.modal.showing {
+  display: block;
+}
+
+.modal {
+  text-align: center;
+  position: fixed;
+  top: 0em;
+  left: 0em;
+  bottom: 0em;
+  right: 0em;
+  background: red;
+  color: white;
+  border: 1px solid #AAA;
+  padding: 2em;
+  display:none;
+}
+
+.modal h1{
+  margin-top: 30%;
+  font-size: 35px;
 }
