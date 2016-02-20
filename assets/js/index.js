@@ -11,10 +11,7 @@ $(function () {
   var clickDisabled = false;
 
 
-  //Timer
-  function appendZero(z) {
-      return ( z < 10 ? "0" : "" ) + z;
-    }
+  //Timer - Base timer located at
 
   setInterval(function() {
     var counter = Math.round((new Date().getTime() - start) / 1000);
@@ -27,9 +24,17 @@ $(function () {
 
     var seconds = Math.floor(counter);
 
-    hours = appendZero(hours);
-    minutes = appendZero(minutes);
-    seconds = appendZero(seconds);
+    if (seconds<10){
+      seconds = "0" + seconds;
+    }
+
+    if (minutes<10){
+      minutes = "0" + minutes;
+    }
+
+    if (hours<10){
+      hours = "0" + hours;
+    }
 
     var timer = hours + ":" + minutes + ":" + seconds;
 
@@ -66,11 +71,14 @@ $(function () {
         ($(".clicked").addClass("clicked2").removeClass("clicked"));
       }
 
-      //If two tiles do not match wipe the storage  and remove the clicked class
+      //If two tiles do not match wipe the storage and remove a heart
 
       else{
         storage=null;
-        $(".heart:last-child").remove();
+        setTimeout(function() {
+          $(".heart:last-child").remove();
+        }, 750);
+
         for(var i = 0; i<$(".clicked").length; i++){
 
           //Set delay on the class removal to allow the second card to flip first.
@@ -88,16 +96,25 @@ $(function () {
 
   window.setInterval(function(){
 
-  //Display win screen if all tiles are matched
+    //Delay endgame for 1 second.
 
-  if($(".clicked2").length > 17){
-    $(".modal2").addClass("showing");
-  }
 
-  //Display lose screen if hearts go empty
 
-  if($(".heart").length === 0){
-    $(".modal").addClass("showing");
-  }
+      //Display win screen if all tiles are matched
+
+      if($(".clicked2").length > 17){
+        setTimeout(function(){
+          $(".modal2").addClass("showing");
+        },1000);
+      }
+
+      //Display lose screen if hearts go empty
+
+      if($(".heart").length === 0){
+        setTimeout(function(){
+          $(".modal").addClass("showing");
+        },1000);
+      }
+
 },200);
 });

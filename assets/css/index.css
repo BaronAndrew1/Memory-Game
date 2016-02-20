@@ -343,7 +343,7 @@ audio{
   bottom: 0em;
   right: 0em;
   background: red;
-  background-image: linear-gradient(to bottom left,teal, blue, teal, blue);
+  background-image: linear-gradient(to bottom left,magenta, blue, magenta, blue, magenta);
   color: white;
   border: 1px solid #AAA;
   padding: 2em;
@@ -351,11 +351,11 @@ audio{
 }
 
 .modal h1{
-  margin-top: 30%;
+  margin-top: 25%;
   font-size: 35px;
 }
 
 .modal2 h1{
-  margin-top: 30%;
+  margin-top: 25%;
   font-size: 35px;
 }
