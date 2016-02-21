@@ -127,84 +127,84 @@ input {
   pointer-events: none;
 }
 
-.clicked .house{
+.clicked .fa-home{
   opacity: 1;
   transition-delay: .5s;
 }
 
-.clicked2 .house{
+.clicked2 .fa-home{
   opacity: 1;
 }
 
-.clicked .fort{
-  opacity: 1;
-  transition-delay: .5s;
-}
-
-.clicked2 .fort{
-  opacity: 1;
-}
-
-.clicked .archive{
+.clicked .fa-fort-awesome{
   opacity: 1;
   transition-delay: .5s;
 }
 
-.clicked2 .archive{
+.clicked2 .fa-fort-awesome{
   opacity: 1;
 }
 
-.clicked .building{
-  opacity: 1;
-  transition-delay: .5s;
-}
-
-.clicked2 .building{
-  opacity: 1;
-}
-
-.clicked .scale{
+.clicked .fa-archive{
   opacity: 1;
   transition-delay: .5s;
 }
 
-.clicked2 .scale{
+.clicked2 .fa-archive{
   opacity: 1;
 }
 
-.clicked .bicycle{
-  opacity: 1;
-  transition-delay: .5s;
-}
-
-.clicked2 .bicycle{
-  opacity: 1;
-}
-
-.clicked .car{
+.clicked .fa-building{
   opacity: 1;
   transition-delay: .5s;
 }
 
-.clicked2 .car{
+.clicked2 .fa-building{
   opacity: 1;
 }
 
-.clicked .camera{
-  opacity: 1;
-  transition-delay: .5s;
-}
-
-.clicked2 .camera{
-  opacity: 1;
-}
-
-.clicked .crosshairs{
+.clicked .fa-balance-scale{
   opacity: 1;
   transition-delay: .5s;
 }
 
-.clicked2 .crosshairs{
+.clicked2 .fa-balance-scale{
+  opacity: 1;
+}
+
+.clicked .fa-bicycle{
+  opacity: 1;
+  transition-delay: .5s;
+}
+
+.clicked2 .fa-bicycle{
+  opacity: 1;
+}
+
+.clicked .fa-car{
+  opacity: 1;
+  transition-delay: .5s;
+}
+
+.clicked2 .fa-car{
+  opacity: 1;
+}
+
+.clicked .fa-camera{
+  opacity: 1;
+  transition-delay: .5s;
+}
+
+.clicked2 .fa-camera{
+  opacity: 1;
+}
+
+.clicked .fa-crosshairs{
+  opacity: 1;
+  transition-delay: .5s;
+}
+
+.clicked2 .fa-crosshairs{
   opacity: 1;
 }
 
@@ -214,7 +214,7 @@ input {
 
 /*Card Images*/
 
-.house {
+.fa-home {
   position: absolute;
   margin-top: 33px;
   margin-left: 35px;
@@ -222,7 +222,7 @@ input {
   opacity: 0;
 }
 
-.fort {
+.fa-fort-awesome {
   position: absolute;
   margin-top: 41px;
   margin-left: 42px;
@@ -230,7 +230,7 @@ input {
   opacity: 0;
 }
 
-.archive {
+.fa-archive {
   position: absolute;
   margin-top: 40px;
   margin-left: 40px;
@@ -238,7 +238,7 @@ input {
   opacity: 0;
 }
 
-.building {
+.fa-building {
   position: absolute;
   margin-top: 40px;
   margin-left: 48px;
@@ -246,7 +246,7 @@ input {
   opacity: 0;
 }
 
-.bicycle {
+.fa-bicycle {
   position: absolute;
   margin-top: 33px;
   margin-left: 28px;
@@ -254,7 +254,7 @@ input {
   opacity: 0;
 }
 
-.car {
+.fa-car {
   position: absolute;
   margin-top: 40px;
   margin-left: 38px;
@@ -262,7 +262,7 @@ input {
   opacity: 0;
 }
 
-.camera {
+.fa-camera {
   position: absolute;
   margin-top: 40px;
   margin-left: 38px;
@@ -270,7 +270,7 @@ input {
   opacity: 0;
 }
 
-.crosshairs {
+.fa-crosshairs {
   position: absolute;
   margin-top: 33px;
   margin-left: 36px;
@@ -278,7 +278,7 @@ input {
   opacity: 0;
 }
 
-.scale {
+.fa-balance-scale {
   position: absolute;
   margin-top: 30px;
   margin-left: 28px;
