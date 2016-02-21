@@ -9,6 +9,48 @@ $(function () {
   var storage = null;
   var start = new Date().getTime();
   var clickDisabled = false;
+  var shuffleStorage = [];
+  var standardStorage = [];
+  var objectStorage = $(".card").children().children();
+
+  // write the class attribute of the objects in objectStorage to standardStorage
+
+  for(var x = 0; x<objectStorage.length; x++){
+    standardStorage[x] = $(objectStorage[x]).attr("class");
+    console.log(standardStorage[x]);
+  }
+
+  //Shuffle standardStorage
+
+  shuffleStorage = shuffle(standardStorage)
+
+
+  //ARRAY SHUFFLER
+
+  function shuffle(array) {
+  var currentIndex = array.length, temporaryValue, randomIndex;
+
+  // While there remain elements to shuffle...
+  while (0 !== currentIndex) {
+
+    // Pick a remaining element...
+    randomIndex = Math.floor(Math.random() * currentIndex);
+    currentIndex -= 1;
+
+    // And swap it with the current element.
+    temporaryValue = array[currentIndex];
+    array[currentIndex] = array[randomIndex];
+    array[randomIndex] = temporaryValue;
+  }
+
+  return array;
+}
+
+// re-attach shuffled items.
+
+for(var x = 0; x<shuffleStorage.length; x++){
+  $(objectStorage[x]).attr("class", shuffleStorage[x]);
+}
 
   //Timer
 
@@ -50,7 +92,7 @@ $(function () {
     //Store Click Value
 
     if($(".clicked").length % 2 === 0){
-      storage=$(this).attr("id");
+      storage=$(this).children().children().attr("class");
     }
 
     //Flip the clicked card
@@ -65,7 +107,7 @@ $(function () {
 
       //If the id is the same add a new clicked class and wipe storage.
 
-      if($(this).attr("id") === storage){
+      if($(this).children().children().attr("class") === storage){
         storage=null;
         ($(".clicked").addClass("clicked2").removeClass("clicked"));
       }
