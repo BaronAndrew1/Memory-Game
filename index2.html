@@ -1,0 +1,252 @@
+<!DOCTYPE>
+
+
+<!-- I received substantial help from Dennis on concepts prior to programming -->
+
+
+<html>
+<audio src="assets/audio/star-wars-awakens.mp3" autoplay controls loop></audio>
+
+  <head>
+    <link rel="stylesheet" href="assets/css/reset.css">
+    <link rel="stylesheet" href="assets/css/index.css">
+    <link href='https://fonts.googleapis.com/css?family=Orbitron:400,500,700,900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+    <title>Memory Game</title>
+  </head>
+
+  <body class="background-color">
+
+    <section class="container">
+
+      <!-- Header and Game Name -->
+
+      <header class="header">
+        <h1>MEM<i class="fa fa-lightbulb-o"></i>RY</h1>
+      </header>
+
+      <!-- HEART COUNTER -->
+
+      <ul class="list">
+        <li class="heart">
+          <i class="fa fa-heart"></i>
+        </li>
+
+        <li class="heart">
+          <i class="fa fa-heart"></i>
+        </li>
+
+        <li class="heart">
+          <i class="fa fa-heart"></i>
+        </li>
+
+        <li class="heart">
+          <i class="fa fa-heart"></i>
+        </li>
+
+        <li class="heart">
+          <i class="fa fa-heart"></i>
+        </li>
+
+        <li class="heart">
+          <i class="fa fa-heart"></i>
+        </li>
+
+        <li class="heart">
+          <i class="fa fa-heart"></i>
+        </li>
+      </ul>
+
+      <!-- TIMER -->
+
+      <aside id="time">
+        <span class = "timer">00:00:00</span>
+      </aside>
+
+      <!-- ROW 1 -->
+
+      <ul class="card-list card-list-top">
+
+        <li class="box">
+          <label class="card">
+            <div id="1-1">
+              <i class="fa fa-home fa-4x icon" id="house"></i>
+            </div>
+          </label>
+        </li>
+
+        <li class="box">
+          <label class="card">
+            <div id="1-2">
+              <i class="fa fa-fort-awesome fa-3x icon" id="fort"></i>
+            </div>
+          </label>
+        </li>
+
+        <li class="box">
+          <label class="card">
+            <div id="1-3">
+              <i class="fa fa-archive fa-3x icon" id="archive"></i>
+            </div>
+          </label>
+        </li>
+
+        <li class="box">
+          <label class="card">
+            <div id="1-4">
+              <i class="fa fa-building fa-3x icon" id="building"></i>
+            </div>
+          </label>
+        </li>
+
+        <li class="box">
+          <label class="card">
+            <div id="1-5">
+              <i class="fa fa-bicycle fa-4x icon" id="bicycle"></i>
+            </div>
+          </label>
+        </li>
+
+        <li class="box">
+          <label class="card">
+            <div id="1-6">
+              <i class="fa fa-bicycle fa-4x icon" id="bicycle"></i>
+            </div>
+          </label>
+        </li>
+      </ul>
+
+      <!-- ROW 2 -->
+
+      <ul class="card-list card-list-mid">
+
+        <li class="box">
+          <label class="card">
+            <div id="2-1">
+              <i class="fa fa-building fa-3x icon" id="building"></i>
+            </div>
+          </label>
+        </li>
+
+        <li class="box">
+          <label class="card">
+            <div id="2-2">
+              <i class="fa fa-archive fa-3x icon" id="archive"></i>
+            </div>
+          </label>
+        </li>
+
+        <li class="box">
+          <label class="card">
+            <div id="2-3">
+              <i class="fa fa-home fa-4x icon" id="house"></i>
+            </div>
+          </label>
+        </li>
+
+        <li class="box">
+          <label class="card">
+            <div id="2-4">
+              <i class="fa fa-car fa-3x icon" id="car"></i>
+            </div>
+          </label>
+        </li>
+
+        <li class="box">
+          <label class="card">
+            <div id="2-5">
+              <i class="fa fa-camera fa-3x icon" id="camera"></i>
+            </div>
+          </label>
+        </li>
+
+        <li class="box">
+          <label class="card">
+            <div id="2-6">
+              <i class="fa fa-fort-awesome fa-3x icon" id="fort"></i>
+            </div>
+          </label>
+        </li>
+      </ul>
+
+      <!-- ROW 3 -->
+
+      <ul class="card-list card-list-bottom">
+
+        <li class="box">
+          <label class="card">
+            <div id="3-1">
+              <i class="fa fa-car fa-3x icon" id="car"></i>
+            </div>
+          </label>
+        </li>
+
+        <li class="box">
+          <label class="card">
+            <div id="3-2">
+              <i class="fa fa-crosshairs fa-4x icon" id="crosshairs"></i>
+            </div>
+          </label>
+        </li>
+
+        <li class="box">
+          <label class="card">
+            <div id="3-3">
+              <i class="fa fa-balance-scale fa-4x icon" id="scale"></i>
+            </div>
+          </label>
+        </li>
+
+        <li class="box">
+          <label class="card">
+            <div id="3-4">
+              <i class="fa fa-camera fa-3x icon" id="camera"></i>
+            </div>
+          </label>
+        </li>
+
+        <li class="box">
+          <label class="card">
+            <div id="3-5">
+              <i class="fa fa-balance-scale fa-4x icon" id="scale"></i>
+            </div>
+          </label>
+        </li>
+
+        <li class="box">
+          <label class="card">
+            <div id="3-6">
+              <i class="fa fa-crosshairs fa-4x icon" id="crosshairs"></i>
+            </div>
+          </label>
+        </li>
+      </ul>
+
+      <!-- Return To Menu Button -->
+
+      <div class="hover2 return">
+        <a href="new-game.html">Return To Menu</a>
+      </div>
+
+      <!-- You Lose Modal -->
+
+      <a href="new-game.html">
+        <div class="modal">
+          <h1>YOU LOSE!!<p>Click to reload</p></h1>
+        </div>
+      </a>
+
+      <!-- You Win Modal -->
+
+      <a href="new-game.html">
+        <div class="modal2">
+          <h1>YOU WIN!!<p>Click to reload</p></h1>
+        </div>
+      </a>
+
+    </section>
+
+    <script src="https://code.jquery.com/jquery-1.12.0.min.js"></script>
+    <script src="assets/js/index.js"></script>
+  </body>
+</html>
