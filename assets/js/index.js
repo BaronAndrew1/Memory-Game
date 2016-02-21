@@ -10,8 +10,7 @@ $(function () {
   var start = new Date().getTime();
   var clickDisabled = false;
 
-
-  //Timer - Base timer located at
+  //Timer
 
   setInterval(function() {
     var counter = Math.round((new Date().getTime() - start) / 1000);
