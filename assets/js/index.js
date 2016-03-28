@@ -138,17 +138,12 @@ for(var x = 0; x<shuffleStorage.length; x++){
   window.setInterval(function(){
 
     //Delay endgame for 1 second.
-
-
-
       //Display win screen if all tiles are matched
-
       if($(".clicked2").length > 17){
         setTimeout(function(){
           $(".modal2").addClass("showing");
         },1000);
       }
-
       //Display lose screen if hearts go empty
 
       if($(".heart").length === 0){
